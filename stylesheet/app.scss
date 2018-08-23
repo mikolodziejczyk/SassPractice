@@ -1,0 +1,37 @@
+$font-stack:    helvetica, sans-serif !default;
+$primary-color: #0ff !default;
+$lighter-color: #777 !default;
+$pararaph-background-color: #eee !default;
+$assetPath: "../images" !default;
+
+.danger {
+  border: 1px solid #f00;
+
+  .serious {
+    border: 2px solid #f00;
+  }
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-image: url("#{$assetPath}/background.jpg");
+
+  p {
+    color: $lighter-color;
+    background: #eee;
+    background-image: linear-gradient(to bottom, #aaa, #eee);
+    border-left: #777 1px solid;
+  }
+
+  a {
+    color: $primary-color;
+
+    :hover {
+      color: #000;
+    }
+  }
+
+  /* My comment */
+
+}
