@@ -1,0 +1,38 @@
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
+}
+
+p {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.danger {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffd700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff7cc), color-stop(50%, #ffe766));
+  background-image: -webkit-linear-gradient(top, #fff7cc 0%, #ffe766 50%);
+  background-image: -o-linear-gradient(top, #fff7cc 0%, #ffe766 50%);
+  background-image: linear-gradient(to bottom, #fff7cc 0%, #ffe766 50%);
+  background-repeat: repeat-x;
+}
+
+p.danger b {
+  color: #998100;
+}
+
+p.danger + p.danger {
+  margin-top: -20px;
+}
+/*# sourceMappingURL=app.css.map */

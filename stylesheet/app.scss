@@ -1,1 +1,40 @@
-// do something here
+@import "mixins/_utilities";
+@import "mixins/_gradients";
+
+$imagePath: "../images" !default;
+
+
+$danger-color: #ffd700;
+
+@import "_variables";
+
+.center-block {
+  @include center-block;
+}
+
+body {
+  background-image: url("#{$imagePath}/background.jpg");
+  background-size: 100%;
+}
+
+p {
+  @include center-block;
+
+  &.danger {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: $danger-color;
+
+    @include vertical-gradient($danger-background, darken($danger-background, 20%), $end-percent: 50%);
+
+    b {
+      color: $danger-b;
+    }
+
+    & + & {
+      margin-top: -20px;
+    }
+  }
+}
